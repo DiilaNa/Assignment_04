@@ -4,44 +4,57 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="../Lib/normalize.css">
+    <link rel="stylesheet" href="../Lib/fontawesome/css/all.css">
     <style>
+        section{
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
         .container{
             width: 100px;
             height: 100px;
-            background-color: blue;
+            background-color: lightblue;
+            display: flex;
+            padding: 10px;
             margin-top: 10px;
             margin-bottom: 10px;
-            position: relative;
-            top: 0;
-            left: -20px;
+            margin-left: -65px;
+            justify-content: space-between;
+            align-items: center;
         }
-        .container:hover{
-            width: 500px;
-            transition: width 2s;
+        .container:hover{width: 500px;
+            margin-left: 0;
+            transition: 2s;
+
         }
     </style>
 
 </head>
 <body>
-<div class="container">
-    <h1>Home</h1>
-    <img src="">
-</div>
-<div class="container">
-    <h1>About</h1>
-
-</div>
-<div class="container">
-    <h1>Home</h1>
-
-</div>
-<div class="container">
-    <h1>Home</h1>
-
-</div>
-<div class="container">
-    <h1>Home</h1>
-
-</div>
+<section>
+    <div class="container">
+       <h2>Home </h2>
+        <i class="fa-solid fa-truck"></i>
+    </div>
+    <div class="container">
+      <h2>About</h2>
+        <i class="fa-solid fa-truck"></i>
+    </div>
+    <div class="container">
+        <h2> Home</h2>
+        <i class="fa-solid fa-truck"></i>
+    </div>
+    <div class="container">
+        <h2> Home</h2>
+        <i class="fa-solid fa-truck"></i>
+    </div>
+    <div class="container">
+       <h2> Home</h2>
+        <i class="fa-solid fa-truck"></i>
+    </div>
+</section>
 </body>
 </html>
