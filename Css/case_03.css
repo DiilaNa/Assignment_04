@@ -1,0 +1,31 @@
+section{
+    width: 800px;
+    height: 600px;
+    border: 4px solid #a80051;
+    position: relative;
+}
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: example 3s ease infinite ;
+
+}
+@keyframes example {
+    0% {
+        transform: translate(0, 0) rotate(0deg); /* Top-left */
+
+    }
+    25% {
+        transform: translate(700px, 0) rotate(360deg); /* Top-right */
+    }
+    50% {
+        transform: translate(700px, 500px) rotate(0deg);  /* Bottom-right */
+    }
+    75% {
+        transform: translate(0, 500px) rotate(360deg);   /* Bottom-left */
+    }
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
