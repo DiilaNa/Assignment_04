@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>car</title>
+</head>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .heroo{
+      background-image:url("../Pics/sky.jpg") ;
+      height: 100vh;
+      width: 100%;
+      background-position:center ;
+      background-size:cover ;
+      position: relative;
+      overflow-x:hidden ;
+
+  }
+
+  .highway{
+      background-image: url("../Pics/road.jpg");
+      background-repeat: repeat-x;
+      position: absolute;
+      height: 200px;
+      width: 500%;
+      display: block;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      animation: highway 5s linear infinite;
+  }
+
+  @keyframes highway {
+      100%{
+          transform: translate(-3400px);
+      }
+
+  }
+
+
+  .city{
+      background-image: url("../Pics/city.png");
+      position: absolute;
+      background-repeat: repeat-x;
+      height: 250px;
+      width: 500%;
+      bottom: 200px;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      animation: city 15s linear infinite;
+  }
+
+  @keyframes city {
+      100%{
+          transform: translate(-1400px);
+      }
+
+  }
+
+
+  .car{
+      width: 400px;
+      left: 50%;
+      bottom: 90px;
+      transform: translate(-50%);
+      position: absolute;
+      z-index: 2;
+  }
+  .car img{
+      width: 100%;
+      animation: car 1s linear infinite;
+  }
+
+  @keyframes car {
+      100%{
+          transform: translate(-1px);
+      }
+      50%{
+          transform: translate(1px);
+      }
+      0%{
+          transform: translate(-1px);
+      }
+
+  }
+
+  .wheel{
+      left: 50%;
+      bottom: 178px;
+      transform: translate(-50px);
+      position: absolute;
+      z-index: 2;
+  }
+  .wheel img{
+      width: 72px;
+      height: 72px;
+      animation: wheel 1s linear infinite;
+  }
+  .b-wheel{
+      position: absolute;
+      left: -115px;
+  }
+  .f-wheel{
+      position: absolute;
+      left: 130px;
+  }
+  @keyframes wheel {
+      100%{
+          transform: rotate(360deg);
+      }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+    <section class="heroo">
+        <div class="highway"></div>
+        <div class="city"></div>
+        <div class="car">
+            <img src="../Pics/carPic.png" alt="car">
+        </div>
+        <div class="wheel">
+            <img src="../Pics/wheel.png" class="b-wheel" alt=" b-wheel">
+            <img src="../Pics/wheel.png" class="f-wheel" alt=" f-wheel">
+        </div>
+    </section>
+
+
+</body>
+</html>
